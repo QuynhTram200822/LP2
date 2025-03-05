@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="./img/White_logo.png" alt="logo">
+    </div>
+    <div class="header-navBar">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a class="active" href="#">Game</a>
+        </li>
+        <li>
+          <a href="#">News</a>
+        </li>
+        <li>
+          <a href="#">math</a>
+        </li>
+        <li>
+          <a href="#">Company</a>
+        </li>
+        <li>
+          <a href="#">Events</a>
+        </li>
+        <li>
+          <a href="#">Partners</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-icon">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+  </header>
+  <div class="slider">
+    <div class="slider-container">
+      <img src="img/slider.jpeg">
+      <div class="slider-overlay"></div>
+      <div class="slider-nav">
+        <span class="slider-nav-button" onclick="currentDiv(1)"></span>
+        <span class="slider-nav-button" onclick="currentDiv(2)"></span>
+        <span class="slider-nav-button show" onclick="currentDiv(3)"></span>
+        <span class="slider-nav-button" onclick="currentDiv(4)"></span>
+        <span class="slider-nav-button" onclick="currentDiv(5)"></span>
+
+      </div>
+      <div class="slider-content">
+        <p class="slider-content_name">
+          Chicky Run
+        </p>
+        <p class="slider-content_detail">
+          Game Detail
+          <i class="fa-solid fa-arrow-right"></i>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="container-1">
+      <div class="container-sideBar">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="container-sideBar-content">
+          <ul>
+            <li class="actived">
+              <i class="fa-solid fa-house"></i>
+              <a href="#">Game Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-folder"></i>
+              <a href="#">Timeline</a>
+            </li>
+            <li>
+              <i class="bi bi-grid-3x3-gap-fill"></i>
+              <a href="#">All Game</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-sideBar-2">
+        <div class="sideBar-2-content">
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-folder"></i>
+              <a href="#">TimeLine</a>
+            </li>
+            <li class="clicked">
+              <i class="bi bi-grid-3x3-gap-fill"></i>
+              <a href="#">All Games</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="#">Search</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-filter"></i>
+              <a href="#">Filter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-content-title">
+          Hot Game
+          <select class="dropdown">
+            <option>
+              <p>
+                Release Date
+              </p>
+              <span>
+                AZ
+              </span>
+            </option>
+            <!-- <option>GitHub</option>
+            <option>Instagram</option>
+            <option>Facebook</option>
+            <option>LinkedIn</option>
+            <option>Twitter</option>
+            <option>Reddit</option> -->
+          </select>
+        </div>
+        <div class="swiper">
+          <div class="swiper-container">
+            <div class="card-item ">
+              <img class="card-item-img " src="./img/card-item1.png" alt="">
+              <div class="card-item-content ">
+                <div class="contain-img">
+                  <img src="./img/game1.png" alt="">
+                </div>
+                <div class="card-item-info  ">
+                  <p class="info-title">
+                    Mahjong Ways
+                  </p>
+                  <p class="info-desc">
+                    4TECH™ has just launched their very
+                    first Mahjong inspired slot machine gam…
+                  </p>
+                </div>
+                <div class="card-footer ">
+                  <div>
+                    <p class="card-footer-title ">MEDIUM</p>
+                    <p class="card-footer-desc ">Volatility</p>
+                  </div>
+                  <div>
+                    <p class="card-footer-title ">95.01%</p>
+                    <p class="card-footer-desc ">RTP</p>
+                  </div>
+                  <div>
+                    <p class="card-footer-title ">x5000</p>
+                    <p class="card-footer-desc ">Maximum Win</p>
+                  </div>
+                </div>
+                <div class="contain-btn">
+                  <button class="btn-view " type="button">View</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-item ">
+              <img class="card-item-img" src="./img/card-item2.png" alt="">
+              <div class="card-item-content ">
+                <div class="contain-img">
+                  <img src="./img/game2.png" alt="">
+                </div>
+                <div class="card-item-info  ">
+                  <p class="info-title">
+                    Wild Bandito
+                  </p>
+                  <p class="info-desc">
+                    Águila which means ‘The Eagle’ is a three-
+                    person Mexican bandit team that is activ…
+                  </p>
+                </div>
+                <div class="contain-btn">
+                  <button class="btn-view " type="button">View</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-nav">
+              <div class="swiper-nav-button disable">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+              <div class="swiper-nav-button">
+                <i class="fa-solid fa-angle-right"></i>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container-content-title2">
+          Hottest Category
+        </div>
+        <div class="swiper">
+          <div class="swiper-container">
+            <div class="card">
+              <div class="card-contentLeft">
+                <div class="card-contentLeft-img1">
+                  <i class="fa-solid fa-music"></i>
+                  <p class="card-title">
+                    Music
+                  </p>
+                  <p class="desc">Music makes everything
+                    better, and these games
+                    will grove to it!</p>
+                </div>
+                <div class="card-contentLeft-img2">
+                  <img src="./img/game3.png" alt="">
+
+                </div>
+                <div class="card-contentLeft-img3">
+                  <img src="./img/game4.png" alt="">
+
+                </div>
+              </div>
+              <div class="card-contentRight">
+
+                <div class="card-contentLeft-img2">
+                  <img src="./img/game5.png" alt="">
+
+                </div>
+                <div class="card-contentLeft-img3">
+                  <img src="./img/game6.png" alt="">
+
+                </div>
+                <div class="card-contentRight-img1">
+                  <img src="./img/game7.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-contentLeft">
+                <div class="card-contentLeft-img1 card-2">
+                  <i class="bi bi-suit-club-fill"></i>
+                  <p class="card-title">
+                    Table Games
+                  </p>
+                  <p class="desc">The classic table games
+                    for the gentlemen and
+                    ladies.</p>
+                </div>
+                <div class="card-contentLeft-img2">
+                  <img src="./img/game3.png" alt="">
+
+                </div>
+                <div class="card-contentLeft-img3">
+                  <img src="./img/game4.png" alt="">
+
+                </div>
+              </div>
+              <div class="card-contentRight">
+
+                <div class="card-contentLeft-img2">
+                  <img src="./img/game5.png" alt="">
+
+                </div>
+                <div class="card-contentLeft-img3">
+                  <img src="./img/game6.png" alt="">
+
+                </div>
+                <div class="card-contentRight-img1">
+                  <img src="./img/game7.png" alt="">
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-nav-2">
+              <div class="swiper-nav-button disable">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+              <div class="swiper-nav-button">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-dots">
+        <span class="swiper-dots-button" onclick="currentDiv(1)"></span>
+        <span class="swiper-dots-button" onclick="currentDiv(2)"></span>
+        <span class="swiper-dots-button show" onclick="currentDiv(3)"></span>
+        <span class="swiper-dots-button" onclick="currentDiv(4)"></span>
+        <span class="swiper-dots-button" onclick="currentDiv(5)"></span>
+      </div>
+      <div class="button-container">
+        <button class="btn-more" type="button">
+          Load More
+          <i class="bi bi-plus-lg"></i>
+        </button>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <div class="line">
+
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-contact">
+          <div class="footer-logo">
+            <img src="./img/gray_logo.png" alt="logo">
+          </div>
+          <p class="footer-contact-address">
+            Valletta Buildings, South Street,
+            Valletta - VLT 1103 Malta
+          </p>
+          <p class="copyRight-2">
+            COPYRIGHT © 2015-2024 ALL RIGHTS RESERVED.
+          </p>
+          <div class="logo-contain">
+            <div class="logo-twitter">
+              <i class="bi bi-twitter"></i>
+            </div>
+            <div class="logo-youtube">
+              <i class="bi bi-youtube"></i>
+            </div>
+            <div class="logo-linkin">
+              <i class="bi bi-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="footer-col">
+            <div class="contain-title">
+              <p class="title">
+                Web map
+              </p>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+            <ul class="links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Math</a></li>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-col-special">
+            <div class="contain-title">
+              <p class="title">
+                ABOUT US
+              </p>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+            <ul class="links">
+              <li><a href="#">Licensing</a></li>
+              <li><a href="#">Certification</a></li>
+              <li><a href="#">Responsible Gaming</a></li>
+              <li><a href="#">Exhibitions</a></li>
+              <li><a href="#">Copyright Protection</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="contain-title">
+              <p class="title">
+                EVENTS
+              </p>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+            <ul class="links">
+              <li><a href="#">PG ICE 2017</a></li>
+              <li><a href="#">PG ICE 2018</a></li>
+              <li><a href="#">PG ICE 2019</a></li>
+              <li><a href="#">About ICE</a></li>
+            </ul>
+          </div>
+          <div class="footer-col ">
+            <div class="contain-title">
+              <p class="title">
+                OUR PARTNERS
+              </p>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+            <ul class="links">
+              <li><a href="#">Relax Gaming</a></li>
+              <li><a href="#">Leander Games</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="line-2">
+      </div>
+      <p class="copyRight">
+        COPYRIGHT © 2015-2024 ALL RIGHTS RESERVED.
+      </p>
+    </div>
+
+
+
+  </footer>
+
+</body>
+
+</html>
