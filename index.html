@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
   <title>Document</title>
 </head>
 
 <body>
+  <!-- Header Section -->
   <header class="header">
     <div class="header-logo">
       <img src="./img/White_logo.png" alt="logo">
@@ -22,7 +25,7 @@
           <a href="#">Home</a>
         </li>
         <li>
-          <a class="active" href="#">Game</a>
+          <a class="active" href="#">Games</a>
         </li>
         <li>
           <a href="#">News</a>
@@ -42,54 +45,119 @@
       </ul>
     </div>
     <div class="header-icon">
-      <i class="fa-solid fa-bars"></i>
+      <i class="bi bi-list"></i>
     </div>
 
   </header>
-  <div class="slider">
-    <div class="slider-container">
-      <img src="img/slider.jpeg">
-      <div class="slider-overlay"></div>
-      <div class="slider-nav">
-        <span class="slider-nav-button" onclick="currentDiv(1)"></span>
-        <span class="slider-nav-button" onclick="currentDiv(2)"></span>
-        <span class="slider-nav-button show" onclick="currentDiv(3)"></span>
-        <span class="slider-nav-button" onclick="currentDiv(4)"></span>
-        <span class="slider-nav-button" onclick="currentDiv(5)"></span>
+  <!-- End Header Section -->
 
+  <!-- Banner Section -->
+  <div class="banner">
+    <div class="banner-card">
+      <div class="img-container">
+        <img src="img/slider.jpeg">
       </div>
+      <div class="slider-overlay"></div>
       <div class="slider-content">
         <p class="slider-content_name">
           Chicky Run
         </p>
         <p class="slider-content_detail">
           Game Detail
-          <i class="fa-solid fa-arrow-right"></i>
+          <i class="bi bi-arrow-right-short"></i>
         </p>
       </div>
-
+    </div>
+    <div class="banner-card">
+      <div class="img-container">
+        <img src="img/slider.jpeg">
+      </div>
+      <div class="slider-overlay"></div>
+      <div class="slider-content">
+        <p class="slider-content_name">
+          Chicky Run
+        </p>
+        <p class="slider-content_detail">
+          Game Detail
+          <i class="bi bi-arrow-right-short"></i>
+        </p>
+      </div>
+    </div>
+    <div class="banner-card">
+      <div class="img-container">
+        <img src="img/slider.jpeg">
+      </div>
+      <div class="slider-overlay"></div>
+      <div class="slider-content">
+        <p class="slider-content_name">
+          Chicky Run
+        </p>
+        <p class="slider-content_detail">
+          Game Detail
+          <i class="bi bi-arrow-right-short"></i>
+        </p>
+      </div>
+    </div>
+    <div class="banner-card">
+      <div class="img-container">
+        <img src="img/slider.jpeg">
+      </div>
+      <div class="slider-overlay"></div>
+      <div class="slider-content">
+        <p class="slider-content_name">
+          Chicky Run
+        </p>
+        <p class="slider-content_detail">
+          Game Detail
+          <i class="bi bi-arrow-right-short"></i>
+        </p>
+      </div>
+    </div>
+    <div class="banner-card">
+      <div class="img-container">
+        <img src="img/slider.jpeg">
+      </div>
+      <div class="slider-overlay"></div>
+      <div class="slider-content">
+        <p class="slider-content_name">
+          Chicky Run
+        </p>
+        <p class="slider-content_detail">
+          Game Detail
+          <i class="bi bi-arrow-right-short"></i>
+        </p>
+      </div>
     </div>
   </div>
+  <!-- End Banner Section -->
+
+  <!-- Body Section -->
   <div class="container">
-    <div class="container-1">
+    <div class="container-inner">
       <div class="container-sideBar">
         <div class="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="bi bi-search"></i>
           <input type="text" placeholder="Search">
         </div>
         <div class="container-sideBar-content">
           <ul>
             <li class="actived">
-              <i class="fa-solid fa-house"></i>
-              <a href="#">Game Home</a>
+              <a href="#">
+                <i class="bi bi-house-fill"></i>
+                Game Home
+              </a>
             </li>
             <li>
-              <i class="fa-solid fa-folder"></i>
-              <a href="#">Timeline</a>
+              <a href="#">
+                <i class="bi bi-files"></i>
+                Timeline
+              </a>
             </li>
             <li>
-              <i class="bi bi-grid-3x3-gap-fill"></i>
-              <a href="#">All Game</a>
+              <a href="#">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+                All Game
+              </a>
             </li>
           </ul>
         </div>
@@ -98,11 +166,11 @@
         <div class="sideBar-2-content">
           <ul>
             <li>
-              <i class="fa-solid fa-house"></i>
+              <i class="bi bi-house-door-fill"></i>
               <a href="#">Home</a>
             </li>
             <li>
-              <i class="fa-solid fa-folder"></i>
+              <i class="bi bi-files"></i>
               <a href="#">TimeLine</a>
             </li>
             <li class="clicked">
@@ -110,19 +178,21 @@
               <a href="#">All Games</a>
             </li>
             <li>
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="bi bi-search"></i>
               <a href="#">Search</a>
             </li>
             <li>
-              <i class="fa-solid fa-filter"></i>
+              <i class="bi bi-funnel-fill"></i>
               <a href="#">Filter</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="container-content">
-        <div class="container-content-title">
-          Hot Game
+      <div class="container-inner-content">
+        <div class="content-title">
+          <p>
+            Hot Game
+          </p>
           <select class="dropdown">
             <option>
               <p>
@@ -141,184 +211,314 @@
           </select>
         </div>
         <div class="swiper">
-          <div class="swiper-container">
-            <div class="card-item ">
-              <img class="card-item-img " src="./img/card-item1.png" alt="">
-              <div class="card-item-content ">
-                <div class="contain-img">
-                  <img src="./img/game1.png" alt="">
-                </div>
-                <div class="card-item-info  ">
-                  <p class="info-title">
-                    Mahjong Ways
-                  </p>
-                  <p class="info-desc">
-                    4TECH™ has just launched their very
-                    first Mahjong inspired slot machine gam…
-                  </p>
-                </div>
-                <div class="card-footer ">
-                  <div>
-                    <p class="card-footer-title ">MEDIUM</p>
-                    <p class="card-footer-desc ">Volatility</p>
-                  </div>
-                  <div>
-                    <p class="card-footer-title ">95.01%</p>
-                    <p class="card-footer-desc ">RTP</p>
-                  </div>
-                  <div>
-                    <p class="card-footer-title ">x5000</p>
-                    <p class="card-footer-desc ">Maximum Win</p>
-                  </div>
-                </div>
-                <div class="contain-btn">
-                  <button class="btn-view " type="button">View</button>
-                </div>
-              </div>
+          <div class="card-item ">
+            <div class="card-item-img ">
+              <img src="./img/card-item1.png" alt="">
             </div>
-            <div class="card-item ">
-              <img class="card-item-img" src="./img/card-item2.png" alt="">
-              <div class="card-item-content ">
-                <div class="contain-img">
-                  <img src="./img/game2.png" alt="">
+            <div class="card-item-content ">
+              <div class="contain-img">
+                <img src="./img/game1.png" alt="">
+              </div>
+              <div class="card-item-info  ">
+                <p class="info-title">
+                  Mahjong Ways
+                </p>
+                <p class="info-desc">
+                  4TECH™ has just launched their very
+                  first Mahjong inspired slot machine gam…
+                </p>
+              </div>
+              <div class="card-footer ">
+                <div>
+                  <p class="card-footer-title ">MEDIUM</p>
+                  <p class="card-footer-desc ">Volatility</p>
                 </div>
-                <div class="card-item-info  ">
-                  <p class="info-title">
-                    Wild Bandito
-                  </p>
-                  <p class="info-desc">
-                    Águila which means ‘The Eagle’ is a three-
-                    person Mexican bandit team that is activ…
-                  </p>
+                <div>
+                  <p class="card-footer-title ">95.01%</p>
+                  <p class="card-footer-desc ">RTP</p>
                 </div>
-                <div class="contain-btn">
-                  <button class="btn-view " type="button">View</button>
+                <div>
+                  <p class="card-footer-title ">x5000</p>
+                  <p class="card-footer-desc ">Maximum Win</p>
                 </div>
               </div>
-            </div>
-            <div class="swiper-nav">
-              <div class="swiper-nav-button disable">
-                <i class="fa-solid fa-angle-left"></i>
+              <div class="contain-btn">
+                <a class="btn-view " href="#">View</a>
               </div>
-              <div class="swiper-nav-button">
-                <i class="fa-solid fa-angle-right"></i>
-
-              </div>
-
             </div>
           </div>
-        </div>
-
-        <div class="container-content-title2">
-          Hottest Category
-        </div>
-        <div class="swiper">
-          <div class="swiper-container">
-            <div class="card">
-              <div class="card-contentLeft">
-                <div class="card-contentLeft-img1">
-                  <i class="fa-solid fa-music"></i>
-                  <p class="card-title">
-                    Music
-                  </p>
-                  <p class="desc">Music makes everything
-                    better, and these games
-                    will grove to it!</p>
+          <div class="card-item ">
+            <img class="card-item-img " src="./img/card-item1.png" alt="">
+            <div class="card-item-content ">
+              <div class="contain-img">
+                <img src="./img/game1.png" alt="">
+              </div>
+              <div class="card-item-info  ">
+                <p class="info-title">
+                  Mahjong Ways
+                </p>
+                <p class="info-desc">
+                  4TECH™ has just launched their very
+                  first Mahjong inspired slot machine gam…
+                </p>
+              </div>
+              <div class="card-footer ">
+                <div>
+                  <p class="card-footer-title ">MEDIUM</p>
+                  <p class="card-footer-desc ">Volatility</p>
                 </div>
-                <div class="card-contentLeft-img2">
-                  <img src="./img/game3.png" alt="">
-
+                <div>
+                  <p class="card-footer-title ">95.01%</p>
+                  <p class="card-footer-desc ">RTP</p>
                 </div>
-                <div class="card-contentLeft-img3">
-                  <img src="./img/game4.png" alt="">
-
+                <div>
+                  <p class="card-footer-title ">x5000</p>
+                  <p class="card-footer-desc ">Maximum Win</p>
                 </div>
               </div>
-              <div class="card-contentRight">
-
-                <div class="card-contentLeft-img2">
-                  <img src="./img/game5.png" alt="">
-
-                </div>
-                <div class="card-contentLeft-img3">
-                  <img src="./img/game6.png" alt="">
-
-                </div>
-                <div class="card-contentRight-img1">
-                  <img src="./img/game7.png" alt="">
-                </div>
+              <div class="contain-btn">
+                <a class="btn-view " href="#">View</a>
               </div>
             </div>
-            <div class="card">
-              <div class="card-contentLeft">
-                <div class="card-contentLeft-img1 card-2">
-                  <i class="bi bi-suit-club-fill"></i>
-                  <p class="card-title">
-                    Table Games
-                  </p>
-                  <p class="desc">The classic table games
-                    for the gentlemen and
-                    ladies.</p>
+          </div>
+          <div class="card-item ">
+            <img class="card-item-img " src="./img/card-item2.png" alt="">
+            <div class="card-item-content ">
+              <div class="contain-img">
+                <img src="./img/game1.png" alt="">
+              </div>
+              <div class="card-item-info  ">
+                <p class="info-title">
+                  Mahjong Ways
+                </p>
+                <p class="info-desc">
+                  4TECH™ has just launched their very
+                  first Mahjong inspired slot machine gam…
+                </p>
+              </div>
+              <div class="card-footer ">
+                <div>
+                  <p class="card-footer-title ">MEDIUM</p>
+                  <p class="card-footer-desc ">Volatility</p>
                 </div>
-                <div class="card-contentLeft-img2">
-                  <img src="./img/game3.png" alt="">
-
+                <div>
+                  <p class="card-footer-title ">95.01%</p>
+                  <p class="card-footer-desc ">RTP</p>
                 </div>
-                <div class="card-contentLeft-img3">
-                  <img src="./img/game4.png" alt="">
-
+                <div>
+                  <p class="card-footer-title ">x5000</p>
+                  <p class="card-footer-desc ">Maximum Win</p>
                 </div>
               </div>
-              <div class="card-contentRight">
-
-                <div class="card-contentLeft-img2">
-                  <img src="./img/game5.png" alt="">
-
-                </div>
-                <div class="card-contentLeft-img3">
-                  <img src="./img/game6.png" alt="">
-
-                </div>
-                <div class="card-contentRight-img1">
-                  <img src="./img/game7.png" alt="">
-
-                </div>
-              </div>
-            </div>
-            <div class="swiper-nav-2">
-              <div class="swiper-nav-button disable">
-                <i class="fa-solid fa-angle-left"></i>
-              </div>
-              <div class="swiper-nav-button">
-                <i class="fa-solid fa-angle-right"></i>
+              <div class="contain-btn">
+                <a class="btn-view " href="#">View</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="swiper-dots">
-        <span class="swiper-dots-button" onclick="currentDiv(1)"></span>
-        <span class="swiper-dots-button" onclick="currentDiv(2)"></span>
-        <span class="swiper-dots-button show" onclick="currentDiv(3)"></span>
-        <span class="swiper-dots-button" onclick="currentDiv(4)"></span>
-        <span class="swiper-dots-button" onclick="currentDiv(5)"></span>
-      </div>
-      <div class="button-container">
-        <button class="btn-more" type="button">
-          Load More
-          <i class="bi bi-plus-lg"></i>
-        </button>
-      </div>
+        <div class="content-title-2">
+          <p>
+            Hottest Category
+          </p>
+
+        </div>
+        <div class="swiper-2">
+          <div class="card">
+            <div class="card-contentLeft">
+              <div class="card-contentLeft-img1">
+                <i class="bi bi-music-note-beamed"></i>
+                <p class="card-title">
+                  Music
+                </p>
+                <p class="desc">Music makes everything
+                  better, and these games
+                  will grove to it!</p>
+              </div>
+              <div class="card-contentLeft-img2">
+                <img src="./img/game3.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game4.png" alt="">
+
+              </div>
+            </div>
+            <div class="card-contentRight">
+
+              <div class="card-contentLeft-img2">
+                <img src="./img/game5.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game6.png" alt="">
+
+              </div>
+              <div class="card-contentRight-img1">
+                <img src="./img/game7.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-contentLeft">
+              <div class="card-contentLeft-img1 card-2">
+                <i class="bi bi-suit-club-fill"></i>
+                <p class="card-title">
+                  Table Games
+                </p>
+                <p class="desc">The classic table games
+                  for the gentlemen and
+                  ladies.</p>
+              </div>
+              <div class="card-contentLeft-img2">
+                <img src="./img/game3.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game4.png" alt="">
+
+              </div>
+            </div>
+            <div class="card-contentRight">
+
+              <div class="card-contentLeft-img2">
+                <img src="./img/game5.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game6.png" alt="">
+
+              </div>
+              <div class="card-contentRight-img1">
+                <img src="./img/game7.png" alt="">
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-contentLeft">
+              <div class="card-contentLeft-img1">
+                <i class="bi bi-music-note-beamed"></i>
+                <p class="card-title">
+                  Music
+                </p>
+                <p class="desc">Music makes everything
+                  better, and these games
+                  will grove to it!</p>
+              </div>
+              <div class="card-contentLeft-img2">
+                <img src="./img/game3.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game4.png" alt="">
+
+              </div>
+            </div>
+            <div class="card-contentRight">
+
+              <div class="card-contentLeft-img2">
+                <img src="./img/game5.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game6.png" alt="">
+
+              </div>
+              <div class="card-contentRight-img1">
+                <img src="./img/game7.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-contentLeft">
+              <div class="card-contentLeft-img1 card-2">
+                <i class="bi bi-suit-club-fill"></i>
+                <p class="card-title">
+                  Table Games
+                </p>
+                <p class="desc">The classic table games
+                  for the gentlemen and
+                  ladies.</p>
+              </div>
+              <div class="card-contentLeft-img2">
+                <img src="./img/game3.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game4.png" alt="">
+
+              </div>
+            </div>
+            <div class="card-contentRight">
+
+              <div class="card-contentLeft-img2">
+                <img src="./img/game5.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game6.png" alt="">
+
+              </div>
+              <div class="card-contentRight-img1">
+                <img src="./img/game7.png" alt="">
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-contentLeft">
+              <div class="card-contentLeft-img1 card-2">
+                <i class="bi bi-suit-club-fill"></i>
+                <p class="card-title">
+                  Table Games
+                </p>
+                <p class="desc">The classic table games
+                  for the gentlemen and
+                  ladies.</p>
+              </div>
+              <div class="card-contentLeft-img2">
+                <img src="./img/game3.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game4.png" alt="">
+
+              </div>
+            </div>
+            <div class="card-contentRight">
+
+              <div class="card-contentLeft-img2">
+                <img src="./img/game5.png" alt="">
+
+              </div>
+              <div class="card-contentLeft-img3">
+                <img src="./img/game6.png" alt="">
+
+              </div>
+              <div class="card-contentRight-img1">
+                <img src="./img/game7.png" alt="">
+
+              </div>
+            </div>
+          </div>
 
 
+        </div>
+        <div class="button-container">
+          <button class="btn-more" type="button">
+            Load More
+            <i class="bi bi-plus-lg"></i>
+          </button>
+        </div>
+      </div>
 
     </div>
-
   </div>
+  <!-- End Body Section -->
 
   <div class="line">
-
   </div>
+  <!-- Footer Section -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-row">
@@ -335,13 +535,19 @@
           </p>
           <div class="logo-contain">
             <div class="logo-twitter">
-              <i class="bi bi-twitter"></i>
+              <a href="#">
+                <i class="bi bi-twitter"></i>
+              </a>
             </div>
             <div class="logo-youtube">
-              <i class="bi bi-youtube"></i>
+              <a href="#">
+                <i class="bi bi-youtube"></i>
+              </a>
             </div>
             <div class="logo-linkin">
-              <i class="bi bi-linkedin"></i>
+              <a href="#">
+                <i class="bi bi-linkedin"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -417,7 +623,18 @@
 
 
   </footer>
+  <!-- End Footer Section -->
 
+
+  <!-- JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./banner.js"></script>
+  <script src="./game.js"></script>
+  <script src="./categogy.js"></script>
 </body>
+
+
 
 </html>
